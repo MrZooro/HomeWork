@@ -1,3 +1,5 @@
+package undo;
+
 import java.util.Stack;
 
 /**
@@ -23,7 +25,7 @@ public class StringBuilderWithUndo {
     private record State(String state) {}
 
     /**
-     * Создает новый объект StringBuilderWithUndo, содержащий указанную строку.
+     * Создает новый объект undo.StringBuilderWithUndo, содержащий указанную строку.
      * Инициализирует историю изменений с начальным состоянием.
      *
      * @param string начальная строка

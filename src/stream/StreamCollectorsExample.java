@@ -23,7 +23,7 @@ class Order {
     }
 }
 
-public class Main {
+public class StreamCollectorsExample {
     public static void main(String[] args) {
         List<Order> orders = List.of(
                 new Order("Laptop", 1200.0),
@@ -48,7 +48,7 @@ public class Main {
         System.out.println("Три самых дорогих продукта:");
         for (int i = 0; i < topThreeProducts.size(); i++) {
             Map.Entry<String, Double> entry = topThreeProducts.get(i);
-            System.out.printf("%d. %s: %.2f%n", i + 1, entry.getKey(), entry.getValue());
+            System.out.println((i + 1) + ") продукт: " + entry.getKey() + ", стоимость: " + entry.getValue());
         }
     }
 }
